@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## makeCacheMatrix is used to build a vector containing key functions regarding 
+# the matrix in the cache. It will be called to check if an inverse has already 
+# been calculated and if so, retrieve it to save time
 
-## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
 
@@ -23,7 +23,11 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve is to be used on "CacheMatrix" object. It is meant to inverse 
+# matrix. It will first check if an inverse has already been calculated. If yes,
+# then it will directly retrive it. If not, it will calculated it the 
+#traditionnal way and store the value in cache for next time
+
 
 cacheSolve <- function(x) {
         ## Return a matrix that is the inverse of 'x'
